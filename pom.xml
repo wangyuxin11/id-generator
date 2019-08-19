@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.19.RELEASE</version>
+		<relativePath></relativePath>
+	</parent>
+
+	<groupId>org.github.id.generator</groupId>
+	<artifactId>id-generator</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<mybatis.version>1.3.0</mybatis.version>
+		<druid.version>1.1.10</druid.version>
+		<junit.version>4.12</junit.version>
+		<sharding.jdbc.version>3.0.0</sharding.jdbc.version>
+		<kotlin.version>1.0.6</kotlin.version>
+		<motan.version>1.0.0</motan.version>
+		<poi.version>3.17</poi.version>
+		<logback.version>1.1.7</logback.version>
+		<slf4j.version>1.7.21</slf4j.version>
+	</properties>
+
+	<modules>
+		<module>id-generator-baidu</module>
+		<module>id-generator-baidu-consumer</module>
+		<module>id-generator-mysql</module>
+		<module>id-generator-twitter-snowflake</module>
+	</modules>
+
+</project>
